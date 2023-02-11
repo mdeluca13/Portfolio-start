@@ -2,7 +2,7 @@
 :root {
   --dark: teal;
   --light: #fff;
-  --click: #c20991;
+  --hovercolor: #ab1f85;
 
 }
 /* Defines entire page style*/
@@ -169,8 +169,8 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--click);
-  background-color: var(--click);
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
   color: var(--light);
   border-radius: 10px;
 }
@@ -184,8 +184,8 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--click);
-  background-color: var(--click);
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
   color: var(--light);
   border-radius: 10px;
 }
@@ -199,8 +199,8 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--click);
-  background-color: var(--click);
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
   color: var(--light);
   border-radius: 10px;
 }
@@ -214,8 +214,8 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--click);
-  background-color: var(--click);
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
   color: var(--light);
   border-radius: 10px;
 }
@@ -229,8 +229,8 @@ h3 {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--click);
-  background-color: var(--click);
+  border-color: var(--hovercolor);
+  background-color: var(--hovercolor);
   color: var(--light);
   border-radius: 10px;
 }
@@ -269,7 +269,7 @@ a:link {
 
 /* adding hover colour */
 a:hover {
-  color: var(--click);
+  color: var(--hovercolor);
   text-decoration: none;
 }
 
