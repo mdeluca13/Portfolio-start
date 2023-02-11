@@ -20,7 +20,7 @@ You can click on each menu item (About Me, My Work, Contact Info) in the header 
 
 You can also click on each link in the footer (GitHub, LinkedIn) and it will link you to the respective webpages) The Email link will open to the Mail app on the device being used. 
 
-![Screenshot of my Portfolio Webpage](/horiseon-accessibility/assets/images/screenshot.png)
+![Screenshot of my Portfolio Webpage](/Assets/images/Portfolio-img.jpeg)
 
 ## Credits
 
