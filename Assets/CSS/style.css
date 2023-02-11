@@ -1,110 +1,329 @@
-/* make boxes of each section and style */
+/* Defines repeate Variables*/
 :root {
   --dark: teal;
   --light: #fff;
   --click: #c20991;
 
 }
+/* Defines entire page style*/
 * {
     background-color:#f3fdec;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Styling of Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 10px;
 }
   
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: var(--dark);
-    color: var(--light);
-    border-radius: 10px;
-  }
-  
-  h1 {
-    font-size: 200%;
-    background-color: var(--dark);
-  }
-
-  h2 {
-    margin: 2% 0;
-    font-size: 250%;
-  }
-
-  nav {
-    background-color: var(--dark);
-  }
-  
-  ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-    background-color: var(--dark);
-  }
-  
-  li {
-    display: inline;
-    background-color: var(--dark);
-    margin: 10px;
-    color: var(--light);
-  }  
-
-  a {
-    color: var(--light);
-    font-weight: bold;
-    text-decoration: none;
-    background-color: var(--dark);
-  }
-  
-  main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: 1200px;
-    margin: 2% auto;
-  }
-
-  img {
-    max-width: 400px;
-    max-height: 400px;
+/* Styling of h1*/
+h1 {
+  font-size: 200%;
+  background-color: var(--dark);
 }
-  body {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-  }
 
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: var(--dark);
-    color: var(--light);
-    border-radius: 10px;
-  }
+/* styling of h2*/
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+  text-align: end;
+}
 
-  footer aside {
-    background-color: var(--dark);
-  }
+/* nav background color */
+nav {
+  background-color: var(--dark);
+}
+  
+/* styling of lists*/
+ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark);
+}
+  
+/* styling of list items*/
+li {
+  display: inline;
+  background-color: var(--dark);
+  margin: 10px;
+}  
 
-  h3 {
-    background-color: var(--dark);
-  }
+/* Styling of links in header and footer*/
+header a,
+footer a {
+  color: var(--light);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--dark);
+}
+  
+/* sizing image and rounding edges*/
+img {
+  max-width: 100%;
+  border-radius: 10px;
+ }
 
+/* styling body*/
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 1.3;
+}
+
+/* adding margin to main*/
+main {
+  margin-top: 2%;
+}
+
+/* setting right border line*/
+#about aside,
+#my-work aside {
+  border-right: 5px solid var(--dark);
+}
+
+/* adding flex to about and work section*/
+#about,
+#my-work {
+  display:flex;
+  align-items:center;
+}
+  
+/* styling left side items*/
+aside {
+  flex: 20%;
+  padding: 20px;
+}
+
+/*formatting spacing for project section side bar */
+#my-work aside {
+  padding: 0px 20px 100% 20px;
+}
+
+/* formatting right side of page sizing and placement */
+#about-me-description,
+#project-display {
+  display:flex;
+  flex: 1 1 80%;
+  margin: 5px;
+  align-items: flex-start;
+  padding-left:20px;
+}
+
+/* formatting project displays*/
+#project-display {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+/* styling images to be less bright so it brightens on hover*/
+.projects img {
+  -webkit-filter: brightness(60%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* adding brightening for hover */
+.projects img:hover {
+  -webkit-filter: brightness(100%);
+}
+  
+    /* Adding spacing between each project image */
+.projects {
+  margin: 1%;
+}
+
+  /* setting projects to be relative so titles and popups are placed correctly*/
+.projects {
+  position: relative;
+}
+
+/* styling project titles*/
+h3 {
+  position:absolute;
+  bottom: 8%;
+  left: 2%;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+  /* adding hover message to image*/
+#project-1:hover::after {
+  content:"Added accessibility features to an already built site";
+  position: absolute;
+  bottom: 3%; 
+  left: 4%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--click);
+  background-color: var(--click);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+  /* adding hover message to image*/
+#project-2:hover::after {
+  content:"You're already here!";
+  position: absolute;
+  bottom: 3%; 
+  left: 4%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--click);
+  background-color: var(--click);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+  /* adding hover message to image*/
+#project-3:hover::after {
+  content:"Many more projects to come!";
+  position: absolute;
+  bottom: 3%; 
+  left: 4%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--click);
+  background-color: var(--click);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+  /* adding hover message to image*/
+#project-4:hover::after {
+  content:"So much more to come!";
+  position: absolute;
+  bottom: 3%; 
+  left: 4%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--click);
+  background-color: var(--click);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+  /* adding hover message to image*/
+#project-5:hover::after {
+  content:"And even more after these!";
+  position: absolute;
+  bottom: 3%; 
+  left: 4%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--click);
+  background-color: var(--click);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+/* styling footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 10px;
+}
+
+/*styling footer background color */
+footer aside {
+  background-color: var(--dark);
+}
+
+/* styling h4 in footer*/
+h4 {
+  background-color: var(--dark);
+  font-size: 150%;
+}
+
+/*styling footer background color */
 footer section {
   background-color: var(--dark);
 }
 
+/* removing underline from links */
 a:link {
   text-decoration: none;
 }
 
+/* adding hover colour */
 a:hover {
   color: var(--click);
   text-decoration: none;
 }
 
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
+/*styling for smaller screens */
+@media screen and (max-width: 768px) {
+
+  /* Use flex-direction to stack the header and nav */
+  header,
+  nav {
+    flex-direction: column;
   }
+
+  /* Make the sidebar above respective section */
+  #about,
+  #my-work {
+    flex-direction: column;
+  }
+
+  /*styling section line to show below about section  */
+  #about {
+    border-bottom: 5px solid var(--dark);
+  }
+
+  /*styling section line not to show if smaller */
+  #about aside,
+  #my-work aside {
+    border-right: none;
+  }
+
+  /*remove spacing to better format page */
+  #about aside,
+  #about-me-description p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* adjusting spacing to better format page */
+  #my-work aside {
+    padding: 0px 20px;
+  }
+
+  /* centering h2 headers*/
+  h2 {
+    text-align:center;
+  }
+
+  /* nav links*/
+  nav a {
+    justify-content: center;
+  }
+
+  /* Use flex-direction to stack the footer and nav  */
+  nav,
+  footer {
+    flex-direction: column;
+  }
+}
