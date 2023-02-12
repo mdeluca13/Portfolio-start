@@ -6,8 +6,6 @@ This is a page for potential employers to view the skills that I have to offer w
 
 I developed this page from scratch so it was very effective in teaching me trial and error, taking breaks to refresh my body and mind, and using the resources available to me to add features to the page or problem solve an error. 
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
 ## Installation
 
 n/a
