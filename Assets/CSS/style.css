@@ -31,7 +31,6 @@ h1 {
 
 /* styling of h2*/
 h2 {
-  margin: 2% 0;
   font-size: 250%;
   text-align: end;
 }
@@ -63,7 +62,12 @@ footer a {
   text-decoration: none;
   background-color: var(--dark);
 }
-  
+
+/* Styling p element */
+p {
+  font-size: 20px;
+}
+
 /* sizing image and rounding edges*/
 img {
   max-width: 100%;
@@ -87,6 +91,7 @@ main {
 #about aside,
 #my-work aside {
   border-right: 5px solid var(--dark);
+  float:left;
 }
 
 /* adding flex to about and work section*/
@@ -94,6 +99,9 @@ main {
 #my-work {
   display:flex;
   align-items:center;
+  position:relative;
+  width:100%;
+  overflow:hidden;
 }
   
 /* styling left side items*/
@@ -104,7 +112,7 @@ aside {
 
 /*formatting spacing for project section side bar */
 #my-work aside {
-  padding: 0px 20px 100% 20px;
+  padding: 0px 20px 70% 20px;
 }
 
 /* formatting right side of page sizing and placement */
@@ -122,11 +130,12 @@ aside {
   display:flex;
   flex-wrap:wrap;
   justify-content: space-evenly;
+
 }
 
 /* styling images to be less bright so it brightens on hover*/
 .projects img {
-  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -136,22 +145,13 @@ aside {
 
 /* adding brightening for hover */
 .projects img:hover {
-  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
   
-    /* Adding spacing between each project image */
+ /* setting spacing and projects to be relative so titles and popups are placed correctly*/
 .projects {
   margin: 1%;
-}
-
-  /* setting projects to be relative so titles and popups are placed correctly*/
-.projects {
   position: relative;
-}
-
-#project-2 img {
-  max-width: 300px;
-  max-height: 300px
 }
 
 /* styling project titles*/
@@ -279,7 +279,7 @@ a:hover {
 }
 
 /*styling for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 847px) {
 
   /* Use flex-direction to stack the header and nav */
   header,
