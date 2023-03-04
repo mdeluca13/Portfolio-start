@@ -1,8 +1,9 @@
 /* Defines repeate Variables*/
 :root {
-  --dark: teal;
+  --dark: rgb(0, 110, 110);
+  --light-teal: rgb(51, 169, 169);
   --light: #fff;
-  --hovercolor: #ab1f85;
+  --hovercolor: #ff9a57dd;
 
 }
 /* Defines entire page style*/
@@ -137,87 +138,42 @@ aside {
 /* styling project titles*/
 h3 {
   position:absolute;
-  bottom: 40%;
-  right: 2%;
+  top: -3%;
+  left: 0%;
   padding: 8px;
   border-radius: 10px;
   background-color: var(--dark);
   color: var(--light);
 }
 
-  /* adding hover message to image*/
-#project-1:hover::after {
-  content:"Added accessibility features to an already built site";
-  position: absolute;
-  bottom: 36.5%; 
-  right: 2%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--hovercolor);
-  background-color: var(--hovercolor);
-  color: var(--light);
+/* styling project descriptions*/
+h4 {
+  position:absolute;
+  bottom: -3.5%;
+  right: 0%;
+  padding: 8px;
   border-radius: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: justify;
+  font-weight: normal;
 }
 
-  /* adding hover message to image*/
-#project-2:hover::after {
-  content:"You're already here!";
-  position: absolute;
-  bottom: 36.5%; 
-  right: 2%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--hovercolor);
-  background-color: var(--hovercolor);
-  color: var(--light);
+/* styling github links */
+h5 {
+  position:absolute;
+  top: 5%;
+  left: 0%;
+  padding: 8px;
   border-radius: 10px;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 17px;
 }
 
-  /* adding hover message to image*/
-#project-3:hover::after {
-  content:"Developed JavaScript to generate a password based on user criteria";
-  position: absolute;
-  bottom: 32%; 
-  right: 2%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--hovercolor);
-  background-color: var(--hovercolor);
-  color: var(--light);
-  border-radius: 10px;
-}
-
-  /* adding hover message to image*/
-#project-4:hover::after {
-  content:"Developed Coding Quiz with High Score Storage";
-  position: absolute;
-  bottom: 32%; 
-  right: 2%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--hovercolor);
-  background-color: var(--hovercolor);
-  color: var(--light);
-  border-radius: 10px;
-}
-
-  /* adding hover message to image*/
-#project-5:hover::after {
-  content:"Developed Daily Planner with Task Storage";
-  position: absolute;
-  bottom: 32%; 
-  right: 2%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--hovercolor);
-  background-color: var(--hovercolor);
-  color: var(--light);
-  border-radius: 10px;
+h5:hover {
+  color: var(--hovercolor);
+  border: 1px dashed var(--hovercolor);
 }
 
 /* styling footer*/
@@ -231,10 +187,13 @@ footer {
   border-radius: 10px;
 }
 
-/* styling h4 in footer*/
-h4 {
+/* styling h6 in footer*/
+h6 {
   background-color: var(--dark);
   font-size: 150%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: flex-start;
 }
 
 /*styling footer background color */
@@ -290,6 +249,7 @@ a:hover {
 
   p {
     margin: 1% 0;
+    font-size: 18px;
   }
 
   /*remove spacing to better format page */
@@ -307,11 +267,28 @@ a:hover {
   /* centering h2 headers*/
   h1,
   h2,
-  h4,
   ul {
     text-align:center;
     margin: 1% 0;
   }
+
+  h1, h2, h6 {
+    font-size: 25px;
+  }
+
+  h3, ul {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
+  h5 {
+    top: 9%;
+    font-size: 12px;
+  }
+
   #project-2,
   #project-3,
   #project-4, 
