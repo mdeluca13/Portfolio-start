@@ -192,9 +192,9 @@ h3 {
 
   /* adding hover message to image*/
 #project-4:hover::after {
-  content:"So much more to come!";
+  content:"Developed Coding Quiz with High Score Storage";
   position: absolute;
-  bottom: 36.5%; 
+  bottom: 32%; 
   right: 2%;
   margin-left: -5px;
   border-width: 5px;
@@ -207,9 +207,9 @@ h3 {
 
   /* adding hover message to image*/
 #project-5:hover::after {
-  content:"And even more after these!";
+  content:"Developed Daily Planner with Task Storage";
   position: absolute;
-  bottom: 36.5%; 
+  bottom: 32%; 
   right: 2%;
   margin-left: -5px;
   border-width: 5px;
