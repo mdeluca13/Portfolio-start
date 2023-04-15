@@ -1,16 +1,17 @@
 /* Defines repeate Variables*/
 :root {
-  --dark: rgb(0, 110, 110);
-  --light-teal: rgb(51, 169, 169);
-  --light: #fff;
-  --hovercolor: #ff9a57dd;
+  --dark: #393E46;
+  --light-teal: #EEEEEE;
+  --light: #EEEEEE;
+  --hovercolor: #4ECCA3;
 
 }
 /* Defines entire page style*/
 * {
-    background-color:#f3fdec;
+    background-color:#232931;
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
+    color: var(--light);
 }
 
 /* Styling of Header*/
@@ -103,14 +104,20 @@ aside {
 }
 
 #parent_1,
-#parent_2 {
+#parent_2,
+#parent_3,
+#parent_4 {
   display:flex;
 }
 
 #project-2,
 #project-3,
 #project-4,
-#project-5 {
+#project-5,
+#project-6,
+#project-7,
+#project-8,
+#project-9 {
   flex:50%;
 }
 
