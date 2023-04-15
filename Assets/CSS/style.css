@@ -105,8 +105,7 @@ aside {
 
 #parent_1,
 #parent_2,
-#parent_3,
-#parent_4 {
+#parent_3 {
   display:flex;
 }
 
@@ -115,9 +114,8 @@ aside {
 #project-4,
 #project-5,
 #project-6,
-#project-7,
-#project-8,
-#project-9 {
+#project-7
+{
   flex:50%;
 }
 
